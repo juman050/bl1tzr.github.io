@@ -182,7 +182,7 @@ body {
 
 p, .paragraph {
   font-weight: 400;
-  color: #666;
+  color: #3d3d3d;
   font-size: 25px;
   line-height: 25px;
   font-family: "Open Sans", sans-serif;
@@ -396,7 +396,7 @@ button {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 176px 0 170px;
 }
 
 @media (max-width: 575px) {
@@ -579,13 +579,13 @@ button {
   width: 10px;
   border-radius: 50%;
   background: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #e8e8e8;
   bottom: -14px;
   left: 0;
 }
 
 .section-title-border-half-white::after {
-  background: #fff;
+  background: #e8e8e8;
   position: absolute;
   content: '';
   height: 2px;
@@ -599,7 +599,8 @@ button {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 160px 0 100px;
+  padding: 170px 0px 170px;
+  margin-top: 110px;
 }
 
 /* breadcrumb */
@@ -928,10 +929,7 @@ button {
   color: #e84444;
 }
 
-.top-header ul li:last-child a {
-  padding-right: 0;
-  border-right: 0;
-}
+
 
 .navigation .navbar {
   padding: 0;
@@ -989,12 +987,12 @@ button {
   color: #222;
   text-transform: uppercase;
   transition: .2s ease;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 @media (max-width: 1199px) {
   .navigation .navbar .nav-item .nav-link {
-    font-size: 12px;
+    font-size: 16px;
     padding: 15px 6px;
   }
 }
@@ -1002,7 +1000,7 @@ button {
 @media (max-width: 991px) {
   .navigation .navbar .nav-item .nav-link {
     padding: 15px 0;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
   }
 }
@@ -1011,20 +1009,6 @@ button {
   color: #e84444;
 }
 
-.navigation .navbar .nav-item:last-child {
-  padding: 28px 0 28px 30px;
-}
-
-@media (max-width: 991px) {
-  .navigation .navbar .nav-item:last-child {
-    padding: 0;
-    margin-bottom: 20px;
-  }
-}
-
-.navigation .navbar .nav-item:last-child .nav-link {
-  color: #fff;
-}
 
 .navigation .navbar .nav-item.active .nav-link {
   color: #e84444;
@@ -2623,3 +2607,19 @@ ul.tag-list li a:hover {
 }
 
 /*# sourceMappingURL=maps/style.css.map */
+
+
+.mb-0{
+  margin-left: 40px;
+}
+.section-title-border-half1::before{
+  position: absolute;
+    content: '';
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #fff;
+    bottom: -14px;
+    left: 0;
+}

@@ -20,9 +20,14 @@
   <link rel="shortcut icon" href="images/logok.png" type="image/x-icon">
   <link rel="icon" href="images/logok.png" type="image/x-icon">
 <style type="text/css">
+	html {
+  scroll-behavior: smooth;
+}
     .background1 {
-    background:url('https://bl1tzr.github.io/images/background/back.jpg');
-    position: relative;
+    background:url('images/background/back.jpg');
+   
+     background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .layer1 {
@@ -34,7 +39,7 @@
     height: 100%;
 }
 .layerwhite {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
     
     top: 0;
     left: 0;
@@ -50,8 +55,15 @@
     height: 100%;
 }
 .margtop20{
-    margin-top: 20px;
+    margin-top: 50px;
 }
+.margbottom20{
+	 margin-bottom: 20px;
+}
+.iconwidth{
+	width: 75px; height: 75px;
+}
+
 </style>
 </head>
 
@@ -65,48 +77,47 @@
 <!-- preloader end --> 
 
 <!-- navigation -->
-<header>
+<header class="text-center" style="position: fixed;top:0px;width: 100%;
+    background-color: white;
+    z-index: 999999;">
   
     <div class="navigation">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a  href="index.html">
-                    <img src="images/logok.png" style="height: 50px;" alt="logo">
-                </a>
+        <div class="container text-center">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light text-center">
+              
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                    aria-expanded="false" aria-label="Toggle navigation" style="margin-top: 30px;margin-bottom: 10px;">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent" >
+                    <ul class="navbar-nav ml-auto text-center">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#company" role="button">
+                            <a class="nav-link company1" role="button">
                                 The Company
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#mission" role="button">
+                            <a class="nav-link mission1" role="button">
                                 Our Mission
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#technology" role="button">
+                            <a class="nav-link technology1" role="button">
                                 Our Technology
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#people" role="button">
+                            <a class="nav-link people1"  role="button">
                                 Our People
                             </a>
                         </li>
                       
                         <li class="nav-item">
-                            <a class="nav-link btn btn-primary btn-sm" href="#contact" style="color: white;">Contact</a>
+                            <a class="nav-link contact1">Contact</a>
                         </li>
-                        <li class="nav-item"></li><a href=""></a><li class="nav-item"><a href=""></a></li>
-                          <li class="nav-item"></li><li class="nav-item"></li>
+
                     </ul>
                 </div>
             </nav>
@@ -117,7 +128,7 @@
 
 <!-- /navigation --> 
 
-<section class="page-title" style="background-image: url(images/background/page-title.jpg);">
+<section class=" page-title" style="background-image: url(images/background/page-title.jpg);">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -129,33 +140,34 @@
         </div>
     </div>
 </section>
-<div class="background1" id="company">
-<div class="layer1">
+<div class="background1" style="padding-top: 20px;padding-bottom: 20px;">
+
 <!-- philosophy -->
-<section class="section layerwhite">
+<section class="section layerwhite margbottom20"  id="company">
     <div class="container">
         <div class="row">
             <!-- philosophy -->
           
             <div class="col-lg-12">
-                <h5 class="section-title-sm">Know About</h5>
-                <h2 class="section-title section-title-border-half">bl1tzR</h2>
+
+                <h1 class="section-title section-title-border-half">bl<span style="color: #f16736;">1</span>tzR</h1>
                 <p>We are start-up in stealth mode working on the next generation of technology for road safety and smart
 cities. </p>
-               
             </div>
         </div>
     </div>
+
 </section>
-<section class="section layerorange" id="mission">
+
+<section class="section layerorange margbottom20" id="mission">
     <div class="container">
         <div class="row">
             <!-- philosophy -->
           
             <div class="col-lg-12 text-white">
-                <h5 class="section-title-sm text-white">Know About</h5>
-                <h2 class="section-title section-title-border-half  text-white">Our Mission
-</h2>
+              
+                <h1 class="section-title section-title-border-half-white  text-white">Our Mission
+</h1>
                 <p class=" text-white">We imagine the future of transportation as a sustainable, safe and seamless ecosystem
 with our technology it its very heart. </p>
                
@@ -163,33 +175,33 @@ with our technology it its very heart. </p>
         </div>
     </div>
 </section>
-<section class="section layerwhite" id="technology">
+<section class="section layerwhite margbottom20" id="technology">
     <div class="container">
         <div class="row">
             <!-- philosophy -->
           
             <div class="col-lg-12">
-                <h5 class="section-title-sm">Know About</h5>
-                <h2 class="section-title section-title-border-half">Our Technology</h2>
+               
+                <h1 class="section-title section-title-border-half">Our Technology</h1>
                  <div class="mb-md-50">
                     <div class="row">
-                        <div class="col-12 margtop20">
+                        <div class="col-12">
                             <div class="d-flex flex-column flex-sm-row align-items-center">
-                                <i class=" mr-sm-3 fa fa-microchip" style="font-size: 50px;text-align: center; color: #f16736; height: 60px; width: 60px;"></i>
+                                <img src="images/background/icon1.png" class="iconwidth">
                                 <div class="text-center text-sm-left">
-                                    <h2 class="mb-0">Internet of Things
-</h2>
+                                    <h3 class="mb-0">Internet of Things
+</h3><br>
                                     <p class="mb-0">Combining the newest state-of-the-art sensors allows to build the most reliable
 device on the market.
 </p>
-                                </div><br><Br>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 margtop20">
                             <div class="d-flex flex-column flex-sm-row align-items-center">
-                                <i class="mr-sm-3 fa fa-tachometer"  style="text-align: center; font-size: 50px;color: #f16736; height: 60px; width: 60px;"></i>
+                                <img src="images/background/icon2.png" class="iconwidth">
                                 <div class="text-center text-sm-left">
-                                    <h2 class="mb-0">Artificial Intelligence</h2>
+                                    <h3 class="mb-0">Artificial Intelligence</h3><br>
                                     <p class="mb-0">Our algorithms are based on the latest findings in artificial intelligence, machine
 learning and computer vision research.</p>
                                 </div>
@@ -197,9 +209,9 @@ learning and computer vision research.</p>
                         </div>
                         <div class="col-12 margtop20">
                             <div class="d-flex flex-column flex-sm-row align-items-center">
-                                <i class="mr-sm-3 fa fa-lock"  style="font-size: 50px;color: #f16736;text-align: center; height: 60px; width: 60px;"></i>
+                                <img src="images/background/icon3.png" class="iconwidth">
                                 <div class="text-center text-sm-left">
-                                    <h2 class="mb-0">Data Security</h2>
+                                    <h3 class="mb-0">Data Security</h3><br>
                                     <p class="mb-0">Performing all computation on-edge makes ensures the highest level of data
 security</p>
                                 </div>
@@ -207,9 +219,9 @@ security</p>
                         </div>
                          <div class="col-12 margtop20">
                             <div class="d-flex flex-column flex-sm-row align-items-center">
-                                <i class="mr-sm-3 fa fa-magic" style="font-size: 50px;color: #f16736;text-align: center; height: 60px; width: 60px;"></i>
+                                <img src="images/background/icon4.png" class="iconwidth">
                                 <div class="text-center text-sm-left">
-                                    <h2 class="mb-0">Autonomy</h2>
+                                    <h3 class="mb-0">Autonomy</h3><br>
                                     <p class="mb-0">Designing our products for minimal power consumption ensures maximum
 autonomy</p>
                                 </div>
@@ -221,15 +233,15 @@ autonomy</p>
         </div>
     </div>
 </section>
-<section class="section layerorange" id="people">
+<section class="section layerorange margbottom20" id="people">
     <div class="container">
         <div class="row">
             <!-- philosophy -->
           
             <div class="col-lg-12 text-white">
-                <h5 class="section-title-sm text-white">Know About</h5>
-                <h2 class="section-title section-title-border-half  text-white">Our People
-</h2>
+               
+                <h1 class="section-title section-title-border-half-white  text-white">Our People
+</h1>
                 <p class=" text-white">We are a team of experienced technologists, driven by the passion to transform our vision
 from imagination into reality.
 </p>
@@ -238,22 +250,21 @@ from imagination into reality.
         </div>
     </div>
 </section>
-<section class="section layerwhite" id="contact">
+<section class="section layerwhite " id="contact">
     <div class="container">
         <div class="row">
             <!-- philosophy -->
           
             <div class="col-lg-12">
-                <h5 class="section-title-sm">Know About</h5>
-                <h2 class="section-title section-title-border-half">Contact Us</h2>
-                <p>If you are interested in talking to us please send us a mail to contact@bl1tzR.com.</p>
+                <h1 class="section-title section-title-border-half">Contact Us</h1>
+                <p>If you are interested in talking to us please send us a mail to <a href="mailto:contact@bl1tzR.com" target="_blank">contact@bl1tzR.com.</a></p>
                
             </div>
         </div>
     </div>
 </section>
 </div>
-</div>
+
 <!-- footer -->
 <footer class="bg-secondary">
   
@@ -280,6 +291,29 @@ from imagination into reality.
 
 <!-- Main Script -->
 <script src="js/script.js"></script>
-
+<script type="text/javascript">
+	$(document).ready(function() {
+    $(".company1").click(function(event){
+    	var scrollTo = $('#company').offset().top;
+    	$(window).scrollTop(scrollTo-130);
+    });
+    $(".mission1").click(function(event){
+    	var scrollTo = $('#mission').offset().top;
+    	$(window).scrollTop(scrollTo-130);
+    });
+    $(".technology1").click(function(event){
+    	var scrollTo = $('#technology').offset().top;
+    	$(window).scrollTop(scrollTo-130);
+    });
+    $(".people1").click(function(event){
+    	var scrollTo = $('#people').offset().top;
+    	$(window).scrollTop(scrollTo-130);
+    });
+    $(".contact1").click(function(event){
+    	var scrollTo = $('#contact').offset().top;
+    	$(window).scrollTop(scrollTo-130);
+    });
+});
+</script>
 </body>
 </html>
