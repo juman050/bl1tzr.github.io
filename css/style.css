@@ -1,9 +1,3 @@
-/*!------------------------------------------------------------------
-[MAIN STYLESHEET]
-
-PROJECT:	Biztrox | Business HTML5 Template
-VERSION:	1.0.0
--------------------------------------------------------------------*/
 /*------------------------------------------------------------------
 [TABLE OF CONTENTS]
 
@@ -2622,4 +2616,15 @@ ul.tag-list li a:hover {
     border: 2px solid #fff;
     bottom: -14px;
     left: 0;
+}
+@media only screen and (max-width: 600px) {
+  .page-title{
+    padding: 100px 0px 0px;
+  }
+  .mb-0{
+    margin-left: 0px;
+  }
+  .maronmob{
+    margin-top: 20px;
+  }
 }
