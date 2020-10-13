@@ -74,13 +74,27 @@ ol.breadcrumb{
  h1, .h1 {
   font-size: 30px;
  }
-.background1 {	
+_.background1 {	
     background: url(images/background/back.jpg);
     background-repeat: initial;
     background-attachment: scroll;
     background-position: center center;
 	
  }
+}
+@supports (-webkit-touch-callout: none) {
+   /* CSS specific to iOS devices */ 
+	.background1 {	
+    background: url(images/background/back.jpg);
+    background-repeat: initial;
+    background-attachment: scroll;
+    background-position: center center;
+	
+ }
+}
+
+@supports not (-webkit-touch-callout: none) {
+   /* CSS for other than iOS devices */ 
 }
 </style>
 </head>
